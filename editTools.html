@@ -1,0 +1,98 @@
+<div id="editWrapper">
+    <div id="floatForm">
+    	<input id='toggleShowOption' name="toggleOption" type="button" value="Hide Edit Option" />
+        
+        <div id="editOption">
+        	<br/>
+        	<div id="actionWrapper">
+                Select levels:<br/>
+                <select id="levellist" name="levellist">
+                </select><br/>
+                <input id="prevLevel" name="prevLevel" class="button" type="button" value="Prev Level">
+                <input id="nextLevel" name="nextLevel" class="button" type="button" value="Next Level">
+                <br/><br/>
+                <input id="addNewLevel" name="addNewLevel" type="button" value="Add New Level">
+                <input id="moveLevelUp" name="moveLevelUp" type="button" value="Move Level Up">
+                <input id="moveLevelDown" name="moveLevelDown" type="button" value="Move Level Down">
+                <input id="removeLevel" name="removeLevel" type="button" value="Remove Level">
+            	<br/><br/>
+                Edit level:
+                <input id='editLevel' name="editLevel" type="button" value="Edit Level" />
+                <input id='editRunway' name="editRunway" type="button" value="Edit Runway" />
+                <br/><br/>
+                Test play, generate and replace array:
+                <input id='testPlay' name="testPlay" type="button" value="Test Play" />
+                <input id='generateArray' name="generateArray" type="button" value="Generate Array" />
+                <textarea id="outputArray" name="outputArray" cols="" rows="10"></textarea>
+        	</div>
+            
+            <div id="playWrapper">
+            	<div id="gameStatus"></div>
+            	<input id='stopTestPlay' name="stopTestPlay" type="button" value="Stop Play" />
+            </div>
+            
+            <div id="editLevelWrapper" style="display:none;">
+            	Edit level detail:<br/>
+            	<div class="formRow">
+                    <label class="button">Map Image:</label>
+                    <input id="levelImage" name="levelImage" class="button" type="text" value="">
+                </div>
+            	<div class="formRow">
+                    <label class="button">Total planes:</label>
+                    <input id="levelTotalPlanes" name="levelTotalPlanes" class="button" type="text" value="10">
+                </div>
+                <div class="formRow">
+                    <label class="button">Plane speed:</label>
+                    <input id="levelPlaneSpeed" name="levelPlaneSpeed" class="button" type="text" value="0">
+                </div>
+                <div class="formRow">
+                    <label class="button">Next Plane Timer:</label>
+                    <input id="levelNextPlaneTimer" name="levelNextPlaneTimer" class="button" type="text" value="6">
+                </div>
+                <br/>
+                <input id="updateLevel" name="updateLevel" type="button" value="Update Level">
+                <input id='doneLevel' name="doneLevel" type="button" value="Done" />
+            </div>
+            
+            <div id="editRunwayWrapper" style="display:none;">
+            	Select runway to edit:
+                <select name="runwayList" id="runwayList" size="10">
+                </select>
+                <br/><br/>
+                <input id="addRunway" name="addRunway" type="button" value="Add New Runway">
+                <input id="removeRunway" name="removeRunway" type="button" value="Remove Runway">
+                <br/><br/>
+                <div id="editRunwayValueWrapper" style="display:none;">
+                    Click and drag runway on stage to adjust position:<br/><br/>
+                    <div class="formRow">
+                        <label class="button">Position X:</label>
+                        <input id="runwayX" name="runwayX" class="button" type="text" value="200">
+                    </div>
+                    <div class="formRow">
+                        <label class="button">Position Y:</label>
+                        <input id="runwayY" name="runwayY" class="button" type="text" value="200">
+                    </div>
+                    <div class="formRow">
+                        <label class="button">Rotation:</label>
+                        <input id="runwayRotation" name="runwayRotation" class="button" type="text" value="0">
+                    </div>
+                    <div class="formRow">
+                        <label class="button">Runway Type:</label>
+                        <select name="runwayType" id="runwayType" class="button">
+                        	<option value="0">Runway</option>
+                            <option value="1">Helipad</option>
+                		</select>
+                    </div>
+                    <div class="formRow">
+                        <label class="button">Planes type (seperate by comma):</label>
+                        <input id="runwayPlanes" name="runwayPlanes" class="button" type="text" value="0,1,2">
+                    </div>
+                    <br/><br/>
+                    <input id="updateRunway" name="updateRunway" type="button" value="Update Runway">
+                </div>
+                <input id='doneRunway' name="doneRunway" type="button" value="Done" />
+            </div>
+            
+        </div>
+    </div>
+</div>
